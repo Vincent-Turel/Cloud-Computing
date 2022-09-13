@@ -13,11 +13,11 @@ def hello_world():  # put application's code here
 
 def init_db():
     conn = psycopg2.connect(
-        host="database",
+        host="ec2-54-228-125-183.eu-west-1.compute.amazonaws.com",
         port="5432",
-        database="td_1",
-        user="vincent",
-        password="password"
+        database="desehotlma73gv",
+        user="pgkzzmxwroynhr",
+        password="26c5bebc39ecd86874e24b90526f07aa3abe74900aaa8178a582284309333a29"
     )
     # Open a cursor to perform database operations
     cur = conn.cursor()
