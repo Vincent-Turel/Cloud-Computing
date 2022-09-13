@@ -3,5 +3,5 @@ ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 RUN pip install flask psycopg2-binary gunicorn
 EXPOSE 5000
-COPY ./app.py ./
+COPY app.py ./
 CMD ["flask", "run"]
